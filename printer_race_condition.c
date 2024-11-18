@@ -30,7 +30,7 @@ void* enviar_para_impressora(void* nome_usuario) {
 
 int main() {
     pthread_t threads[NUM_THREADS];
-    char* usuarios[NUM_THREADS] = {"Alice", "Bob", "Carol"};
+    char* usuarios[NUM_THREADS] = {"Joao", "Pedro", "Dani"};
 
     for (int i = 0; i < NUM_THREADS; i++) {
         pthread_create(&threads[i], NULL, enviar_para_impressora, (void*)usuarios[i]);
